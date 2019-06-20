@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>无人机自动路径规划管理系统</title>
+    <link rel="stylesheet" href="css/index.css"><!--引入外部css样式-->
+</head>
+
+<body>
+<div id="app"></div>
+<div id="aside"><!--侧边栏-->
+    <div>
+        <button id="ctrlBtn">绘制凸多边形地块</button><!--按钮-->
+    </div>
+    <div>
+        <input type="number" placeholder="请输入飞行间隔" id="spaceInp" class="hide" /><!--输入框-->
+    </div>
+    <div id="stepRotateBox" class="hide"><!--角度拖动条-->
+        <label>旋转角度</label>
+        <input type="range" id="stepRotate" max="360" min="0" value="0" />
+        <span id="stepRotateValue">0</span>
+    </div>
+    <div>
+        <button id="crtStepBtn" class="hide">生成航线</button><!--按钮-->
+    </div>
+    <div>
+        <button id="crtBestBtn" class="hide">生成最优航线</button><!--按钮-->
+    </div>
+    <div>
+        <button id="send2DBBtn" class="hide">发送边界到数据库</button><!--按钮-->
+    </div>
+    <div>
+        <button id="sendDBBtn" class="hide">发送路径到数据库</button><!--按钮-->
+    </div>
+    <div>
+        <button id="sendUAVBtn" class="hide">发送到无人机</button><!--按钮-->
+    </div>
+    <div>
+        <button id="show0PreBtn">显示上次规划</button><!--按钮-->
+    </div>
+    <div>
+        <button id="show2PreBtn" class="hide">显示上次规划边界</button><!--按钮-->
+    </div>
+    <div>
+        <button id="showPreBtn" class="hide">显示上次规划路径</button><!--按钮-->
+    </div>
+</div>
+<!--百度地图api在1.4及之前的版本不需要申请ak密钥，在1.5及之后的版本才需要申请ak密钥-->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.4"></script>
+<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=mgLhfciixgv86X1nGOU3491CGKU0F7DY"></script>-->
+<script type="text/javascript" src="http://api.map.baidu.com/library/GeoUtils/1.2/src/GeoUtils_min.js"></script>
+<script type="text/javascript" src="js/index.js"></script><!--使用src属性引用外部js脚本-->
+</body>
+
+</html>

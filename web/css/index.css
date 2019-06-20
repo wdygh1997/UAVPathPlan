@@ -1,0 +1,36 @@
+html,
+body,
+#app {/*id属性选择器*/
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#app {/*id属性选择器*/
+    z-index: 0;/*设置元素的堆叠顺序*/
+}
+
+#aside {/*id属性选择器*/
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.8);/*背景色白色*/
+    z-index: 1;/*设置元素的堆叠顺序*/
+}
+
+#aside div {/*id属性选择器*/
+    margin: 15px 0;
+}
+
+.hide {/*类属性选择器*/
+    display: none;/*此元素不会被显示*/
+}
+
+button {/*标签选择器，选中所有的按钮*/
+    width: 150px;
+}

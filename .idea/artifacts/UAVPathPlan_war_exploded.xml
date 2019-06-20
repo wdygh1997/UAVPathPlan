@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="UAVPathPlan:war exploded">
+    <output-path>C:/apache-tomcat-8.5.39/webapps/UAVPathPlan</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="UAVPathPlan/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="UAVPathPlan" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
